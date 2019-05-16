@@ -1,7 +1,5 @@
 FROM node:alpine
 
-#RUN apk add --update bash && rm -rf /var/cache/apk/*
-
 ENV NODE_ENV=production
 
 WORKDIR /usr/src/app
@@ -16,7 +14,5 @@ RUN npm install
 
 EXPOSE 3000
 
-#USER node
-#CMD ["node", "app.js"]
-#CMD ["npm", "run dev"]
+USER node
 CMD ["sh", "init.sh"]
