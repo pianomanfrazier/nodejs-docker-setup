@@ -1,0 +1,24 @@
+{
+  "name": "docker-dev-setup",
+  "version": "1.0.0",
+  "description": "A sample NodeJS Express Dev Environment",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docker",
+    "nodejs",
+    "express"
+  ],
+  "author": "Ryan Frazier",
+  "license": "MIT"
+}
